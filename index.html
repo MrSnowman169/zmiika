@@ -1,1 +1,37 @@
+<link rel="stylesheet" href="style.css">
 
+<div class="game-container">
+  <h1>Змійка</h1>
+  
+  <div class="controls-panel">
+    <div class="select-group">
+      <label for="difficulty">Складність:</label>
+      <select id="difficulty">
+        <option value="150">Легка</option>
+        <option value="100" selected>Середня</option>
+        <option value="60">Важка</option>
+      </select>
+    </div>
+
+    <div class="select-group">
+      <label for="mapSize">Розмір поля:</label>
+      <select id="mapSize">
+        <option value="300">Мале (15x15)</option>
+        <option value="400" selected>Середнє (20x20)</option>
+        <option value="500">Велике (25x25)</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="score">Рахунок: <span id="score">0</span></div>
+  
+  <canvas id="game" width="400" height="400"></canvas>
+  
+  <div class="buttons">
+    <button id="startBtn">Почати спочатку</button>
+  </div>
+
+  <p class="controls-hint">Керування: Стрілки на клавіатурі</p>
+</div>
+
+<script src="script.js"></script>
